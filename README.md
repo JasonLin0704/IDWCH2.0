@@ -40,6 +40,6 @@ It contains three features:
 
 In our demo, we downloaded the zip file from NYCU E3 platform. The assignment we want to correct is one of the questions in the Data Structure course. In this example, the course participants would need to provide their c/cpp files, and their goals are to read the input called `input.txt` in the same directory and output the answer to the output file called `answer.txt`, also in the same directory. To correct their homework, we start from `Corrector/start.sh`. We create folders to store codes temporarily, execute `Corrector/correct.sh` by a new terminal, which takes `Testcase/input{i}.txt` as `input.txt` and compare the result with `Testcase/answer{i}.txt`, and finally get the score of each student. In the end, we locate the specific row by finding the student ID and fill the score in. We're done!
 
-# QA
+# Q&A
 Q: Why does my `driver.find_element()` always go wrong?\
 A: First, you can try to lengthen the interval of `time.sleep()`. Otherwise, you're probably setting the wrong XPath.
