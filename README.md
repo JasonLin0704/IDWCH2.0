@@ -6,21 +6,28 @@ Designed for TAs, <ins>**IDWCH2.0**</ins> is a nearly fully automated example, d
 
 It contains three features:
 1. Download the assignment zip files from a specific link.
-2. Correct homework using pre-established test cases and Calculate scores.
+2. Correct homework using pre-established test cases and calculate scores.
 3. Fill scores into a Google Sheet.
 
 # How to use it?
-|Feature|Procedure|Execution|
-|:------|:--------|:--------|
+Download the whole project, modify some files, and simply run the python script.
+```
+python3 activate.py
+```
+
+It will do all things as follows.
+|Feature|Procedure|Execution location|
+|:------|:--------|:-----------------|
 |1|Find the specific element containing the target and wait for the download to complete|`activate.py`|
 |2-1|Unzip the target, create folders, and organize files|`Corrector/start.sh`|
 |2-2|Compare the execution results with the correct answers and output `score.txt`|`Corrector/correct.sh`|
 |3|Open the URL with Google Sheets API and fill scores into it|`activate.py`|
 
-### Before starting, you have to do & know several things:
+# Note
+Before starting, you have to do & know several things:
 - Please modify the function `download_from_urls()` in `activate.py` to direct to your desired URL.
 - Please modify `Credential/credential.json`.
-  - The default 'NYCU' is my information for login.
+  - The default 'NYCU' is the my information for login.
   - The default 'gsheet' is my information for Google Sheets API.
     - The default 'key_filename' is the name of the JSON file, which is the key to use API.
     - The default 'url' is the URL of the Google Sheet.
