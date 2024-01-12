@@ -33,9 +33,12 @@ It contains three features:
 - You can put your `isentropic-keep-xxxxxx-xxxxxxxxxxxx.json` under `Credential`.
 - You can put your custom test cases under `Testcase`.
 
-- You may have noticed that I used the term "nearly fully automated," and the reason is, if the target website for file download has a captcha or two-factor authentication, manual input is required. You can either go through it once in advance to bypass the verification (NYCU Portal is an example), or you can set a longer `time.sleep()` to allow for a manual input window.
+- You may have noticed that I used the term "nearly fully automated," and the reason is that, if the target website for file download has a captcha or two-factor authentication, manual input is required. You can either go through it once in advance to bypass the verification (NYCU Portal is an example) or set a longer `time.sleep()` to allow for a manual input window.
 
-# Demo 
+# Demo
+<a href="https://youtu.be/EIV3oNEiH4I" target="_blank">https://youtu.be/EIV3oNEiH4I</a>
+
+In our demo, we downloaded the zip file from NYCU E3 platform. The assignment we want to correct is one of the questions in the Data Structure course. In this example, the course participants would need to provide their c/cpp files, and their goals are to read the input called `input.txt` in the same directory and output the answer to the output file called `answer.txt`, also in the same directory. To correct their homework, we start from `Corrector/start.sh`. We create folders to store codes temporarily, execute `Corrector/correct.sh` by a new terminal, which takes `Testcase/input{i}.txt` as `input.txt` and compare the result with `Testcase/answer{i}.txt`, and finally get the score of each student. In the end, we locate the specific row by finding the student ID and fill the score in. We're done!
 
 # QA
 Q: Why does my `driver.find_element()` always go wrong?\
