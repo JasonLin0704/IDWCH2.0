@@ -10,7 +10,7 @@ It contains three features:
 3. Fill scores into a Google Sheet.
 
 # How to use it?
-Download the whole project, modify some files, and simply run the python script.
+Download the whole project, modify some files, and simply run the Python script.
 ```
 python3 activate.py
 ```
@@ -27,7 +27,7 @@ It will do all things as follows.
 Before starting, you have to do & know several things:
 - Please modify the function `download_from_urls()` in `activate.py` to direct to your desired URL.
 - Please modify `Credential/credential.json`.
-  - The default 'NYCU' is the my information for login.
+  - The default 'NYCU' is my information for login.
   - The default 'gsheet' is my information for Google Sheets API.
     - The default 'key_filename' is the name of the JSON file, which is the key to use API.
     - The default 'url' is the URL of the Google Sheet.
@@ -45,7 +45,11 @@ Before starting, you have to do & know several things:
 # Demo
 <a href="https://youtu.be/EIV3oNEiH4I" target="_blank">https://youtu.be/EIV3oNEiH4I</a>
 
-In our demo, we downloaded the zip file from NYCU E3 platform. The assignment we want to correct is one of the questions in the Data Structure course. In this example, the course participants would need to provide their c/cpp files, and their goals are to read the input called `input.txt` in the same directory and output the answer to the output file called `answer.txt`, also in the same directory. To correct their homework, we start from `Corrector/start.sh`. We create folders to store codes temporarily, execute `Corrector/correct.sh` by a new terminal, which takes `Testcase/input{i}.txt` as `input.txt` and compare the result with `Testcase/answer{i}.txt`, and finally get the score of each student. In the end, we locate the specific row by finding the student ID and fill the score in. We're done!
+In our demonstration, we obtained a zip file from NYCU E3 platform, specifically from the Data Structure course. The task at hand involves correcting an assignment where participants are required to submit their C/C++ files. The objective is to read input from a file named `input.txt` within the same directory and generate the output into a file named `answer.txt`, also located in the same directory.
+
+To initiate the correction process, we execute the Corrector/start.sh script. This script creates temporary folders to store code, followed by the execution of Corrector/correct.sh in a new terminal. This script takes `Testcase/input{i}.txt` as `input.txt` and compares the resulting output with `Testcase/answer{i}.txt`. Ultimately, this process yields a score for each student. Ultimately, this process yields a score for each student.
+
+Upon completion, we proceed to select our desired column 'G', identify the specific row corresponding to the student ID, and input the obtained score. This concludes the correction process.
 
 # Q&A
 Q: Why does my `driver.find_element()` always go wrong?\
