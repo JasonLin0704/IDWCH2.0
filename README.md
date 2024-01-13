@@ -9,7 +9,7 @@ It contains three features:
 2. Correct homework using pre-established test cases and calculate scores.
 3. Fill scores into a Google Sheet.
 
-# How to use it?
+# Usage
 Download the whole project, modify some files, and simply run the Python script.
 ```
 python3 activate.py
@@ -43,6 +43,13 @@ Before starting, you have to do & know several things:
 - You may have noticed that I used the term "nearly fully automated," and the reason is that, if the target website for file download has a captcha or two-factor authentication, manual input is required. You can either go through it once in advance to bypass the verification (NYCU Portal is an example) or set a longer `time.sleep()` to allow for a manual input window.
 
 # Demo
+Testing environment:
+- Ubuntu 20.04.5 LTS
+- Python 3.8.10
+  - Selenium 4.16.0, Pandas 2.0.3, Pygsheets 2.0.6
+- Google Chrome 120.0.6099.199 (Official Build) (64-bit)
+- Chromedriver 120.0.6099.109 (r1217362), Stable, linux64
+
 <a href="https://youtu.be/EIV3oNEiH4I" target="_blank">https://youtu.be/EIV3oNEiH4I</a>
 
 In our demonstration, we obtained a zip file from NYCU E3 platform, specifically from the Data Structure course. The task at hand involves correcting an assignment where participants are required to submit their C/C++ files. The objective is to read input from a file named `input.txt` within the same directory and generate the output into a file named `answer.txt`, also located in the same directory.
