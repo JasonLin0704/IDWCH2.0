@@ -42,11 +42,15 @@ Before starting, you have to do & know several things:
 
 - You may have noticed that I used the term "nearly fully automated," and the reason is that, if the target website for file download has a captcha or two-factor authentication, manual input is required. You can either go through it once in advance to bypass the verification (NYCU Portal is an example) or set a longer `time.sleep()` to allow for a manual input window.
 
+- As for the chromedriver, you can get the latest version here: https://googlechromelabs.github.io/chrome-for-testing/
+
 # Demo
 Testing environment:
 - Ubuntu 20.04.5 LTS
 - Python 3.8.10
-  - Selenium 4.16.0, Pandas 2.0.3, Pygsheets 2.0.6
+  - Selenium 4.16.0
+  - Pandas 2.0.3
+  - Pygsheets 2.0.6
 - Google Chrome 120.0.6099.199 (Official Build) (64-bit)
 - Chromedriver 120.0.6099.109 (r1217362), Stable, linux64
 
