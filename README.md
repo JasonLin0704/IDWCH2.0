@@ -58,9 +58,9 @@ Testing environment:
 
 In our demonstration, we obtained a zip file from NYCU E3 platform, specifically from the Data Structure course. The task at hand involves correcting an assignment where participants are required to submit their C/C++ files. The objective is to read input from a file named `input.txt` within the same directory and generate the output into a file named `answer.txt`, also located in the same directory.
 
-To initiate the correction process, we execute the Corrector/start.sh script. This script creates temporary folders to store code, followed by the execution of Corrector/correct.sh in a new terminal. This script takes `Testcase/input{i}.txt` as `input.txt` and compares the resulting output with `Testcase/answer{i}.txt`. Ultimately, this process yields a score for each student. Ultimately, this process yields a score for each student.
+To initiate the correction process, we execute the Corrector/start.sh script. This script creates temporary folders to store code, followed by the execution of Corrector/correct.sh in a new terminal. This script takes `Testcase/input{i}.txt` as `input.txt` and compares the resulting output with `Testcase/answer{i}.txt`. Ultimately, this process yields a score for each student.
 
-Upon completion, we proceed to select our desired column 'G', identify the specific row corresponding to the student ID, and input the obtained score. This concludes the correction process.
+Upon completion, we select our desired column 'G', identify the specific row corresponding to the student ID, and input the obtained score. This concludes the correction process.
 
 # Q&A
 Q: Why does my `driver.find_element()` always go wrong?\
