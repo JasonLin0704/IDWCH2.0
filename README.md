@@ -60,8 +60,7 @@ In our demonstration, we obtained a zip file from NYCU E3 platform, specifically
 
 To initiate the correction process, we execute the Corrector/start.sh script. This script creates temporary folders to store code, followed by the execution of Corrector/correct.sh in a new terminal. This script takes `Testcase/input{i}.txt` as `input.txt` and compares the resulting output with `Testcase/answer{i}.txt`. Ultimately, this process yields a score for each student.
 
-Upon completion, we select our desired column 'G', identify the specific row corresponding to the student ID, and input the obtained score. This concludes the correction process.
-
+Upon completion, we select our desired column 'G', identify the specific row corresponding to the student ID, and input the obtained score. So, it's all done!
 # Q&A
 Q: Why does my `driver.find_element()` always go wrong?\
 A: First, you can try to lengthen the interval of `time.sleep()`. Otherwise, you're probably setting the wrong XPath.
